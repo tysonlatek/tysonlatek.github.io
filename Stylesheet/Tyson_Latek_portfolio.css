@@ -1,0 +1,244 @@
+body {
+    margin: 0%; /* Display will go to the edge of the screen */
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    color: black;
+}
+
+h1:hover {
+    filter: grayscale(5%);
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.white-text {
+    color: white;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p:hover {
+    transition: transform 1s;
+    transform: scale(1.01);
+}
+
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: transform 2s;
+    transform: scale(1.1);
+}
+
+a {
+    color: blue;
+}
+
+q {
+    font-style: italic;
+}
+
+img {
+    filter: grayscale(75%);
+    border-radius: 5px;
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 575px) {
+    img {
+        height: 100px;
+        margin-top: 150px;
+    }
+}
+
+footer {
+    padding: 2%;
+    background-color: white;
+}
+
+.Navbar {
+    overflow: hidden;
+    background-color: darkblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: moveNav 5s;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vw}
+    to {left: 0vw}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75ms;
+    animation: moveNavText 5.75s;
+}
+
+@keyframes moveNavText {
+    from {top: -100vw}
+    to {top: 0vw}
+}
+
+@media screen and (max-width: 575px) {
+    .Navbar a {
+        width: 25%;
+        font-size: 15px;
+    }
+}
+
+.Navbar a:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+
+.Navbar a.active {
+    background-color: gray;
+}
+
+#Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 575px) {
+    #Video {
+        display: none;
+}
+}
+
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: lightskyblue;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: whitesmoke;
+}
+
+@media screen and (max-width: 575px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 350px;
+    background-color: gray;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 400px;
+}
+
+.Row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px gray inset;
+}
+
+input[type=submit] {
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+}
+
+form {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

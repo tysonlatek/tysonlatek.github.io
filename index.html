@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Tyson Latek Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="Stylesheet/Tyson_Latek_portfolio.css">
+    </head>
+
+    <body class="Background">
+        
+        <!-- Navbar -->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Background video -->
+        <div id="Home">
+            <video autoplay muted loop id="Video">
+                <source src="Images/video.mp4" type="video/mp4">
+                <!-- Display message if video fails -->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!-- Video Text -->
+        <div class="Video_Text">
+            <h1 class="white-text">Tyson Latek's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver.
+                        <br>No playwright, no stage director, no emperor, however powerful, has ever exercised such absolute authority to arrange a stage or
+                        <br>field of battle and to command such unservingly dutiful actors or troops.
+                    </q>
+                    <br> -Joseph Weizenbaum
+                    <br>
+                    <br>My name is Tyson Latek. Welcome to my portfolio website.
+                    <br>
+                    <br> Thank you for taking time to look at my portfolio!
+                </p>
+            </strong>
+        </div>
+
+        <!-- About Information -->
+        <div class="Row" id="About">
+            <!-- Left column -->
+            <div class="Column_2">
+                <img src="Images/pc_image.jpg" alt="PC next to a phone on a desk">
+            </div>
+            <!-- Right column -->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am an aspiring software developer. <!-- *Add more details* -->
+                    <br>
+                    <br>I am currently studying at <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Game Developer Boot Camp, and am training in the following web and programming languages: HTML, CSS, JavaScript, SQL, C#, and more.
+                    <br>
+                    <br>I am working to become a full-stack developer. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!-- GitHub section -->
+        <div class="Row" id="GitHub">
+            <!-- Left column -->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/tysonlatek" target="_blank">Tyson Latek GitHub</a></p>
+                </p>
+            </div>
+            <!-- Right column -->
+            <div class="Column_2">
+                <a href="https://github.com/tysonlatek" target="_blank"><img src="Images/GitHub.png" alt="GitHub logo"></a>
+            </div>
+        </div>
+
+        <!-- Contact section -->
+        <div class="Row" id="Contact">
+            <!-- Contact image, left column -->
+            <div class="Column_2 Column_tall">
+                <img src="Images/contact_image.jpg" alt="Person holding out a business card">
+            </div>
+            <!-- contact form, right column -->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!-- This specifies where and how to send the form data -->
+                <form action="https://formspree.io/f/mjvdavjl" method="POST"> <!-- Here I am utlizing a 3rd party service to submit the contact form data -->
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name">
+                    <label>Email:</label>
+                        <input type="text" id="Email" placeholder="Please enter your email">
+                    <label>Message:</label>
+                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                        <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer section -->
+        <footer>
+            <p>
+                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+    </body>
+</html>
