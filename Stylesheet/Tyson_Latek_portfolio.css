@@ -109,7 +109,7 @@ footer {
 /***** Navbar Styling *****/
 .Navbar {
     overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
-    background-color: darkblue; /* This colors the navbar black */
+    background-color: darkblue; /* This colors the navbar darkblue */
     position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
     top: 0; /* This ensures no space is displayed above the navbar */
     width: 100%; /* This makes the navbar span the entire width of the page */
@@ -172,7 +172,7 @@ footer {
 
 /* Screens that are 576px and smaller will not display the background video */
 @media screen and (max-width: 576px) {
-    #Typing_Video {
+    #Video {
         display: none;
     }
 }
@@ -403,7 +403,7 @@ button {
 /* Hover effect for contact and submit buttons */
 button:hover, .form-container .btn:hover {
     color: white; /* This makes the text in the buttons white when hovered over */
-    background-color: darkblue; /* The background of the button changes to black when hovered over */
+    background-color: darkblue; /* The background of the button changes to darkblue when hovered over */
     transition-duration: 1s; /* This makes the transition last 1 second */
     -webkit-transition-duration: 1s; /* For Safari 4.0-8.0 */
     border-color: silver; /* The border turns silver when the button is hovered over */
