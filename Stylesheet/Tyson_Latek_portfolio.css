@@ -12,7 +12,7 @@ body {
     transition: 3s opacity; /* This causes a 3 second fade in */
     letter-spacing: .2vw; /* vw is a relative measurement, 1vw is equal to 1% of the viewport width */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
     overflow-x: hidden; /* This prevents the horizontal scroll bar from appearing when the quote is hovered over */
     user-select: none; /* This prevents the text on the webpage from being highlighted by the user */
 }
@@ -28,7 +28,7 @@ h1 {
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: black; 
+    color: black;
 }
 
 /* Heading 1 element hover effect */
@@ -136,7 +136,7 @@ footer {
     text-align: center; /* This centers the text within its container */
     position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
     -webkit-animation: moveNavText 4s; /* Animation for Safari 4.0 - 8.0 */
-    animation: moveNavText 4s; /* Applies the moveNavText animation for 5.75s */ 
+    animation: moveNavText 4s; /* Applies the moveNavText animation for 5.75s */
 }
 
 /* The animation effect for moving the nav bar links in from above the top of the screen on page load */
@@ -198,7 +198,7 @@ footer {
 
 /***** Slideshow Styling *****/
 #Slideshow_Background {
-    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's palced over the video in the background */    
+    background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's palced over the video in the background */
 }
 
 .mySlides{
@@ -256,7 +256,7 @@ footer {
 
 /* Slideshow text */
 .text {
-    color: white; 
+    color: white;
     padding: 1vw;
     position: absolute; /* This ensures the text is positioned within the image */
     bottom: 0; /* This property sets the text at the bottom of the image */
@@ -275,7 +275,7 @@ footer {
     cursor: pointer; /* The cursor changes to pointer when hovered over the dots */
     height: 1vw; /* The dots are sized relative to the viewport width */
     width: 1vw;
-    margin: .25vw; /* adds additional spacing between the dots */ 
+    margin: .25vw; /* adds additional spacing between the dots */
     background-color: white; /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
     display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
@@ -310,7 +310,7 @@ footer {
 /***** Table Styling -  this section covers the styling of the columns and rows within the table *****/
 * { /*The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
-} 
+}
 
 .Column_1 {
     float: left;
@@ -353,12 +353,12 @@ footer {
 
 /* movePopup animation moves the button from off the right side of the screen to its fixed location on the viewport */
 @keyframes movePopup {
-    from {right: -40vw;} 
+    from {right: -40vw;}
     to {right: 1.75vw;}
 }
 
 @-webkit-keyframes movePopup {
-    from {right: -40vw;} 
+    from {right: -40vw;}
     to {right: 1.75vw;}
 }
 
@@ -375,7 +375,7 @@ footer {
 .form-container {
     max-width: 49vw; /* Relative sizing of the form container - 49% of the viewport width */
     padding: 1vw; /* Adds padding between the form-popup and the form-container */
-    background-color: white; 
+    background-color: white;
 }
 
 /* Input fields */
@@ -393,7 +393,7 @@ button {
     font-family: "Trebuchet MS", Optima;
     letter-spacing: .3vw; /* Adds slight spacing between the letters */
     font-size: 1.5vw; /* Relative sizing of text */
-    font-weight: bold; 
+    font-weight: bold;
     padding: 1.5vw; /* Adds padding to the text in the button */
     cursor: pointer; /* Changes the cursor to pointer over button elements */
     width: 100%; /* Sets the width of the buttons to 100% of their containers */
